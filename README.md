@@ -160,8 +160,6 @@ treated as untrusted input, not a trusted fixture:
   regex `RegExp.prototype.exec`). Both confirmed by source grep, not
   assumed.
 
-Full write-up: `PUBLICATIE-POORT.md`.
-
 ## Status
 
 Pre-release. Not yet published: no `npm publish`, no public repo yet --
