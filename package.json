@@ -16,5 +16,12 @@
     "test": "node --test test/*.test.mjs"
   },
   "license": "MIT",
-  "private": true
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holistis/confirm-check.git"
+  },
+  "homepage": "https://github.com/holistis/confirm-check#readme",
+  "bugs": {
+    "url": "https://github.com/holistis/confirm-check/issues"
+  }
 }

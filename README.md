@@ -1,4 +1,4 @@
-# confirm-check (MVP, not yet published)
+# confirm-check
 
 Scans an AI coding agent / terminal-UI codebase for a specific bug class:
 untrusted text (an MCP tool name, a proposed shell command, a warning, an
@@ -162,6 +162,10 @@ treated as untrusted input, not a trusted fixture:
 
 ## Status
 
-Pre-release. Not yet published: no `npm publish`, no public repo yet --
-`package.json` has `"private": true` as a deliberate guard against an
-accidental publish while this is still under review.
+Early release (v0.1.0). Built to find this one bug class reliably, not as
+a general-purpose static analyzer. If you maintain an AI coding CLI and
+this flags something, please check it manually before acting on it --
+it detects a code *pattern*, not AI-agent context, so a human-review step
+is part of the intended workflow, not an afterthought.
+
+Issues and PRs welcome: https://github.com/holistis/confirm-check
