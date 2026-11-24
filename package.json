@@ -1,10 +1,10 @@
 {
   "name": "confirm-check",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Scans AI coding agent CLIs for terminal confirmation-prompt spoofing (ANSI/control-character asymmetry in human-approval renders).",
   "type": "module",
   "bin": {
-    "confirm-check": "./bin/confirm-check.mjs"
+    "confirm-check": "bin/confirm-check.mjs"
   },
   "files": [
     "bin",
