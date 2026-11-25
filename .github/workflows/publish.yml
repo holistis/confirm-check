@@ -19,4 +19,13 @@ jobs:
           node-version: 22
           registry-url: https://registry.npmjs.org
       - run: npm test
-      - run: npm publish --provenance --access public
+      - name: Check whether this version is already on npm
+        id: already
+        run: |
+          v=$(node -p "require('./package.json').version")
+          if npm view "confirm-check@$v" version >/dev/null 2>&1; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+            echo "confirm-check@$v is already on npm, nothing to publish"
+          fi
+      - if: steps.already.outputs.published != 'true'
+        run: npm publish --provenance --access public
